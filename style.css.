@@ -1,9 +1,69 @@
+/* Базовые нежные стили для всего сайта */
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #faf5ff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #faf5ff; /* Мягкий лавандово-розовый фон */
     color: #2d3748;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
 }
+
+/* Белая карточка по центру */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(160, 120, 200, 0.05); /* Легкая сиреневая тень */
+}
+
+/* Главный заголовок */
 h1 {
-    color: #6b46c1;
+    color: #6b46c1; /* Красивый фиолетовый акцент */
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
+
+/* Подзаголовки разделов */
+h2 {
+    color: #805ad5;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #faf5ff;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+/* Текст абзацев */
+p {
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+/* Подпись под главным заголовком */
+.subtitle {
+    font-style: italic;
+    color: #718096;
+    margin-bottom: 30px;
+}
+
+/* Списки */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Элементы списков с милыми звездочками */
+li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+li::before {
+    content: "✦"; /* Звездочка вместо обычной точки */
+    position: absolute;
+    left: 0;
+    color: #b7791f; /* Золотистый оттенок */
+}
+
